@@ -1,2 +1,185 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+}
 
-/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
+/*Général*/
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexcolumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexbetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titreacc {
+  font-size: x-large;
+  width: 100%;
+  justify-self: flex-start;
+  margin-left: 20px;
+}
+
+.btnmenu {
+  width: 280px;
+  height: 70px;
+  border-radius: 20px 20px 0 0;
+  background-color: #F2F2F2;
+  margin-top: -25px;
+  padding: 0 20px;
+}
+
+.titremenu {
+  width: 100%;
+  font-size: large;
+  justify-self: flex-start;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+/*header accueil*/
+.logo {
+  height: 30px;
+  padding: 10px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #DCDCDC;
+  height: 50px;
+  border-top: 2px solid #C0C0C0;
+}
+
+.searchinput {
+  background-color: #DCDCDC;
+  border: 1px solid #DCDCDC;
+  font-size: medium;
+  margin-left: 10px;
+  width: 150px;
+}
+
+.headertitre {
+  width: 100%;
+  background-color: #F2F2F2;
+}
+
+.textalign {
+  text-align: center;
+}
+
+.btnhead {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  color: white;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+/*nav accueil*/
+.numero {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  margin-left: -10px;
+  background-color: #9356DC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-small;
+  color: white;
+}
+
+.btnnav {
+  height: 50px;
+  width: 280px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  background-color: #F2F2F2;
+  box-shadow: 5px 5px 5px #DCDCDC;
+}
+
+.btnmargin {
+  margin-right: 60px;
+}
+
+/*cards accueil*/
+.restaurant {
+  background-color: #F2F2F2;
+}
+
+.cardsize {
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #DCDCDC;
+  margin-bottom: 30px;
+}
+
+.imageacc {
+  width: 300px;
+  height: 140px;
+  border-radius: 20px 20px 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.txtacc {
+  margin: 0 20px;
+}
+
+/*header francaise*/
+.position {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+}
+
+.imagefr {
+  height: 250px;
+  width: 320px;
+}
+
+/*menu francaise*/
+.cardsfr {
+  background-color: #F2F2F2;
+}
+
+.menufr {
+  height: 70px;
+  width: 300px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #DCDCDC;
+  margin: 15px 0;
+}
+
+.txtform {
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+.btnfin {
+  margin-top: 50px;
+}/*# sourceMappingURL=style.css.map */
