@@ -59,6 +59,8 @@ $backgroundsearch: #DCDCDC;
 
 .titremenu
 {
+    min-width: 320px !important;
+    max-width: 500px !important;
     width: 100%;
     font-size: large;
     justify-self: flex-start;
@@ -184,7 +186,7 @@ $backgroundsearch: #DCDCDC;
     margin: 0 20px;
 }
 
-/*header francaise*/@at-root
+/*header menu*/@at-root
 
 .position
 {
@@ -196,20 +198,28 @@ $backgroundsearch: #DCDCDC;
 .imagefr
 {
     height: 250px;
-    width: 320px;
+    width: 100%;
+    min-width: 320px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/*menu francaise*/@at-root
+/*menu*/@at-root
 
 .cardsfr
 {
     background-color: $backgroundprimary;
+    min-width: 320px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menufr
 {
     height: 70px;
-    width: 300px;
+    width: 90%;
     background-color: white;
     border-radius: 20px;
     box-shadow: 5px 5px 5px $backgroundsearch;
