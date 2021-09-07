@@ -268,6 +268,21 @@ footer {
   margin: 15px 0;
 }
 
+.prix:hover .deplacement {
+  display: block;
+}
+
+.prix:hover .displaynone {
+  display: block;
+}
+
+.sizeprix {
+  width: 40px;
+  height: 70px;
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+}
+
 .txtform {
   font-size: 15px;
   padding-left: 10px;
