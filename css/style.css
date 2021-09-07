@@ -6,28 +6,55 @@ body {
 
 /*Général*/
 .flexcolumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .flexcenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .flexbetween {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .justifystart {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .displaynone {
@@ -61,7 +88,7 @@ body {
   margin-right: auto;
 }
 
-.useful_width, .cardsfr, .imagefr {
+.useful_width, .imagefr, .cardsfr {
   min-width: 320px;
   max-width: 500px;
   margin-left: auto;
@@ -75,9 +102,15 @@ body {
 }
 
 .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   background-color: #DCDCDC;
   height: 50px;
@@ -102,12 +135,19 @@ body {
 }
 
 .btnhead {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 200px;
   height: 40px;
   color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(#FF79DA, #9356DC);
   border-radius: 20px;
   margin-bottom: 40px;
@@ -120,9 +160,15 @@ body {
   border-radius: 20px;
   margin-left: -10px;
   background-color: #9356DC;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: xx-small;
   color: white;
 }
@@ -133,7 +179,8 @@ body {
   border-radius: 20px;
   margin-bottom: 30px;
   background-color: #F2F2F2;
-  box-shadow: 5px 5px 5px #DCDCDC;
+  -webkit-box-shadow: 5px 5px 5px #DCDCDC;
+          box-shadow: 5px 5px 5px #DCDCDC;
 }
 
 .btnmargin {
@@ -147,7 +194,8 @@ body {
 
 .cardsize {
   border-radius: 20px;
-  box-shadow: 5px 5px 5px #DCDCDC;
+  -webkit-box-shadow: 5px 5px 5px #DCDCDC;
+          box-shadow: 5px 5px 5px #DCDCDC;
   margin-bottom: 30px;
 }
 
@@ -189,10 +237,20 @@ footer {
 }
 
 .icone_heart {
-  transition: color 400ms;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
 }
+
 .icone_heart:hover {
   color: #FF79DA;
+}
+
+.icone_heart:hover .displaynone {
+  display: block;
+}
+
+.icone_heart:hover .displayblock {
+  display: none;
 }
 
 /*menu*/
@@ -205,7 +263,8 @@ footer {
   width: 90%;
   background-color: white;
   border-radius: 20px;
-  box-shadow: 5px 5px 5px #DCDCDC;
+  -webkit-box-shadow: 5px 5px 5px #DCDCDC;
+          box-shadow: 5px 5px 5px #DCDCDC;
   margin: 15px 0;
 }
 
@@ -216,4 +275,5 @@ footer {
 
 .btnfin {
   margin-top: 50px;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */

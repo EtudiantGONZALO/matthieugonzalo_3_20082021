@@ -232,11 +232,21 @@ footer
 
 .icone_heart
 {
-    transition: color 400ms;
+    transition: all 400ms;
         &:hover
         {
             color: #FF79DA;
         }
+}
+
+.icone_heart:hover .displaynone
+{
+    display: block;
+}
+
+.icone_heart:hover .displayblock
+{
+    display: none
 }
 
 /*menu*/@at-root
