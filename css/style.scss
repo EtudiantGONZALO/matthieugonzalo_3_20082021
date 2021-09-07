@@ -6,13 +6,6 @@ body
 
 /*Général*/@at-root
 
-.flex
-{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .flexcolumn
 {
     display: flex;
@@ -35,9 +28,25 @@ body
     align-items: center;
 }
 
+.justifystart
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.displaynone
+{
+    display: none;
+}
+
 $backgroundprimary: #F2F2F2;
 
 $backgroundsearch: #DCDCDC;
+
+$backgroundfooter: #000000;
+
+$backgroundfootertxt: white;
 
 .titreacc
 {
@@ -71,7 +80,8 @@ $backgroundsearch: #DCDCDC;
 
 .useful_width
 {
-    max-width: 320px;
+    min-width: 320px;
+    max-width: 500px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -187,6 +197,23 @@ $backgroundsearch: #DCDCDC;
     margin: 0 20px;
 }
 
+/*footer*/@at-root
+
+footer
+{
+    background-color: $backgroundfooter;
+}
+
+.logofooter
+{
+    height: 20px;
+}
+
+.txt_footer
+{
+    color: $backgroundfootertxt;
+}
+
 /*header menu*/@at-root
 
 .position
@@ -199,11 +226,17 @@ $backgroundsearch: #DCDCDC;
 .imagefr
 {
     height: 250px;
-    min-width: 320px;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    @extend .useful_width;
     width: 100%;
+}
+
+.icone_heart
+{
+    transition: color 400ms;
+        &:hover
+        {
+            color: #FF79DA;
+        }
 }
 
 /*menu*/@at-root
@@ -211,10 +244,7 @@ $backgroundsearch: #DCDCDC;
 .cardsfr
 {
     background-color: $backgroundprimary;
-    min-width: 320px;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    @extend .useful_width
 }
 
 .menufr
