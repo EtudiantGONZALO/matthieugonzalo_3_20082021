@@ -193,6 +193,7 @@ footer {
 
 .logofooter {
   height: 20px;
+  filter: invert(100%);
 }
 
 .txt_footer {
@@ -292,13 +293,12 @@ footer {
   left: 50%;
   margin-top: -60px;
   margin-left: -60px;
-  border: 16px solid grey;
+  border: 16px solid black;
   border-top-color: #FF79DA;
   border-bottom-color: #9356DC;
-  background-color: black;
   border-radius: 50%;
-  -webkit-animation: chargeur 2000ms linear infinite;
-          animation: chargeur 2000ms linear infinite;
+  -webkit-animation: chargeur 3000ms linear;
+          animation: chargeur 3000ms linear;
 }
 
 @-webkit-keyframes chargeur {
@@ -332,8 +332,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-animation: chargeuricone 2000ms linear infinite;
-          animation: chargeuricone 2000ms linear infinite;
+  color: black;
+  -webkit-animation: chargeuricone 3000ms linear;
+          animation: chargeuricone 3000ms linear;
 }
 
 @-webkit-keyframes chargeuricone {

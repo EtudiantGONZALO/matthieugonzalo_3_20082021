@@ -238,6 +238,7 @@ footer
 .logofooter
 {
     height: 20px;
+    filter: invert(100%);
 }
 
 .txt_footer
@@ -353,12 +354,11 @@ footer
     left: 50%;
     margin-top: -60px;
     margin-left: -60px;
-    border: 16px solid grey;
+    border: 16px solid black;
     border-top-color: #FF79DA;
     border-bottom-color: #9356DC;
-    background-color: black;
     border-radius: 50%;
-    animation: chargeur 2000ms linear infinite;
+    animation: chargeur 3000ms linear;
 }
 
 @keyframes chargeur
@@ -371,7 +371,7 @@ footer
     {
         transform: rotate(360deg) scale(1.15);
         border-top-color: #99E2D0;
-        border-bottom-color: #99E2D0
+        border-bottom-color: #99E2D0;
     }
     100%
     {
@@ -384,7 +384,8 @@ footer
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: chargeuricone 2000ms linear infinite;
+    color: black;
+    animation: chargeuricone 3000ms linear;
 }
 
 @keyframes chargeuricone
