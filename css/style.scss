@@ -314,14 +314,22 @@ footer
 
 .btncheck
 {
-    position: relative;
-    left: 20px;
-    transition: all 1000ms ease-in-out;
-    &:hover
-    {
-        transform: translateX(-20px) rotate(720deg);
-    }
+    animation: iconecheck 1000ms ease-in-out;
 }
+
+@keyframes iconecheck
+    {
+        0%
+        {
+            transform: translateX(30px) rotate(0deg);
+        }
+        100%
+        {
+            transform: translateX(0px) rotate(1080deg);
+        }
+    }
+
+
 
 .txtform
 {
@@ -332,4 +340,63 @@ footer
 .btnfin
 {
     margin-top: 50px;
+}
+
+/*loader*/@at-root
+
+.loader
+{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -60px;
+    margin-left: -60px;
+    border: 16px solid grey;
+    border-top-color: #FF79DA;
+    border-bottom-color: #9356DC;
+    border-radius: 50%;
+    animation: chargeur 2000ms linear infinite;
+}
+
+@keyframes chargeur
+{
+    0%
+    {
+        transform: rotate(0deg) scale(1);
+    }
+    50%
+    {
+        transform: rotate(360deg) scale(1.15);
+    }
+    100%
+    {
+        transform: rotate(720deg) scale(1);
+    }
+}
+
+.displayicone
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    animation: chargeuricone 2000ms linear infinite;
+}
+
+@keyframes chargeuricone
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.40);
+    }
+    100%
+    {
+        transform: scale(1);
+    }
 }
