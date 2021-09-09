@@ -321,7 +321,7 @@ footer
     {
         0%
         {
-            transform: translateX(30px) rotate(0deg);
+            transform: translateX(30px) rotate(0deg); 
         }
         100%
         {
@@ -356,6 +356,7 @@ footer
     border: 16px solid grey;
     border-top-color: #FF79DA;
     border-bottom-color: #9356DC;
+    background-color: black;
     border-radius: 50%;
     animation: chargeur 2000ms linear infinite;
 }
@@ -381,7 +382,6 @@ footer
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
     animation: chargeuricone 2000ms linear infinite;
 }
 
@@ -389,14 +389,21 @@ footer
 {
     0%
     {
-        transform: scale(1);
+        transform: scale(1) rotate(0deg);
     }
     50%
     {
-        transform: scale(1.40);
+        transform: scale(2.20) rotate(-360deg);
     }
     100%
     {
-        transform: scale(1);
+        transform: scale(1) rotate(-720deg);
     }
+}
+
+.backgroundcolor
+{
+    width: 100%;
+    height: 100%;
+    background-color: black;
 }

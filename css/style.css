@@ -295,6 +295,7 @@ footer {
   border: 16px solid grey;
   border-top-color: #FF79DA;
   border-bottom-color: #9356DC;
+  background-color: black;
   border-radius: 50%;
   -webkit-animation: chargeur 2000ms linear infinite;
           animation: chargeur 2000ms linear infinite;
@@ -327,31 +328,35 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
   -webkit-animation: chargeuricone 2000ms linear infinite;
           animation: chargeuricone 2000ms linear infinite;
 }
 
 @-webkit-keyframes chargeuricone {
   0% {
-    transform: scale(1);
+    transform: scale(1) rotate(0deg);
   }
   50% {
-    transform: scale(1.4);
+    transform: scale(2.2) rotate(-360deg);
   }
   100% {
-    transform: scale(1);
+    transform: scale(1) rotate(-720deg);
   }
 }
 
 @keyframes chargeuricone {
   0% {
-    transform: scale(1);
+    transform: scale(1) rotate(0deg);
   }
   50% {
-    transform: scale(1.4);
+    transform: scale(2.2) rotate(-360deg);
   }
   100% {
-    transform: scale(1);
+    transform: scale(1) rotate(-720deg);
   }
+}
+.backgroundcolor {
+  width: 100%;
+  height: 100%;
+  background-color: black;
 }/*# sourceMappingURL=style.css.map */
