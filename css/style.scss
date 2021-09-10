@@ -140,7 +140,7 @@ $backgroundfootertxt: white;
     width: 200px;
     height: 40px;
     color: white;
-    background-color: #9356DC;
+    background: linear-gradient(#FF79DA, #9356DC);
     border-radius: 20px;
     margin-bottom: 40px;
     z-index: 1;
@@ -161,7 +161,7 @@ $backgroundfootertxt: white;
         bottom: 0;
         left: 0;
         border-radius: 20px;
-        background: linear-gradient(lighten(#FF79DA, 5) 0%, darken(#9356DC, 10) 100%);
+        background: linear-gradient(darken(#FF79DA, 8) 0%, lighten(#9356DC, 4) 100%);
         opacity: 0;
         z-index: -1;
         transition: opacity 500ms;
@@ -299,10 +299,27 @@ footer
     margin: 15px 0;
 }
 
-.prix:hover .displaynone
+.menufr:hover .displaynone
 {
     display: flex;
 }
+
+.iconecheck
+{
+    animation: iconecheck 1000ms ease-in-out 1;
+}
+
+@keyframes iconecheck
+    {
+        0%
+        {
+            transform: translateX(15px) rotate(0deg); 
+        }
+        100%
+        {
+            transform: translateX(0px) rotate(720deg);
+        }
+    }
 
 .sizeprix
 {
@@ -312,25 +329,6 @@ footer
     border-radius: 0 20px 20px 0;
     color: white;
 }
-
-.btncheck
-{
-    animation: iconecheck 1000ms ease-in-out;
-}
-
-@keyframes iconecheck
-    {
-        0%
-        {
-            transform: translateX(30px) rotate(0deg); 
-        }
-        100%
-        {
-            transform: translateX(0px) rotate(1080deg);
-        }
-    }
-
-
 
 .txtform
 {
@@ -432,7 +430,6 @@ footer
 
 .opaque
 {
-    opacity: 0;
     animation: opaquebody 3000ms linear 1;
     animation-fill-mode: backwards;
 }
@@ -451,4 +448,81 @@ footer
     {
         opacity: 100%;
     }
+}
+
+/*animation déroulant menu */
+
+.opaqueentree
+{
+    animation: opaqueentree 1000ms linear 1;
+    animation-fill-mode: backwards;
+}
+
+@keyframes opaqueentree
+{
+    0%
+    {
+        opacity: 0%;
+    }
+    32%
+    {
+        opacity: 0%;
+    }
+    33%
+    {
+        opacity: 100%;
+    }
+    100%
+    {
+        opacity: 100%;
+    }
+}
+
+.opaqueplats
+{
+    animation: opaqueplats 1000ms linear 1;
+    animation-fill-mode: backwards;
+}
+
+@keyframes opaqueplats
+{
+    0%
+    {
+        opacity: 0%;
+    }
+    65%
+    {
+        opacity: 0%;
+    }
+    66%
+    {
+        opacity: 100%;
+    }
+    100%
+    {
+        opacity: 100%;
+    }
+}
+
+.opaquedesserts
+{
+    animation: opaquedesserts 1000ms linear 1;
+    animation-fill-mode: backwards;
+}
+
+@keyframes opaquedesserts
+{
+    0%
+    {
+        opacity: 0%;
+    }
+    99%
+    {
+        opacity: 0%;
+    }
+    100%
+    {
+        opacity: 100%;
+    }
+
 }
