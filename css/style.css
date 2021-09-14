@@ -106,6 +106,13 @@ body {
   text-align: center;
 }
 
+.icone_acc {
+  transition: all 400ms;
+}
+.icone_acc:hover {
+  color: #9356DC;
+}
+
 .btnhead {
   display: flex;
   justify-content: center;
@@ -152,7 +159,7 @@ body {
 
 .btnnav {
   height: 50px;
-  width: 280px;
+  width: 70%;
   border-radius: 20px;
   margin-bottom: 30px;
   background-color: #F2F2F2;
@@ -297,10 +304,12 @@ footer {
   border-top-color: #FF79DA;
   border-bottom-color: #9356DC;
   border-radius: 50%;
-  -webkit-animation: chargeur 3000ms linear 1;
-          animation: chargeur 3000ms linear 1;
+  -webkit-animation: chargeur 2500ms linear 1;
+          animation: chargeur 2500ms linear 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 
 @-webkit-keyframes chargeur {
@@ -355,10 +364,12 @@ footer {
   justify-content: center;
   align-items: center;
   color: black;
-  -webkit-animation: chargeuricone 3000ms linear 1;
-          animation: chargeuricone 3000ms linear 1;
+  -webkit-animation: chargeuricone 2500ms linear 1;
+          animation: chargeuricone 2500ms linear 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
 }
 
 @-webkit-keyframes chargeuricone {
