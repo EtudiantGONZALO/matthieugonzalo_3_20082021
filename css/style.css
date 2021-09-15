@@ -298,6 +298,9 @@ footer {
 .txtform {
   font-size: 15px;
   padding-left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .btnfin {
@@ -460,6 +463,7 @@ footer {
 }
 /*animation déroulant menu */
 .opaqueentree {
+  width: 100%;
   -webkit-animation: opaqueentree 1000ms linear 1;
           animation: opaqueentree 1000ms linear 1;
   -webkit-animation-fill-mode: backwards;
@@ -496,6 +500,7 @@ footer {
   }
 }
 .opaqueplats {
+  width: 100%;
   -webkit-animation: opaqueplats 1000ms linear 1;
           animation: opaqueplats 1000ms linear 1;
   -webkit-animation-fill-mode: backwards;
@@ -532,6 +537,7 @@ footer {
   }
 }
 .opaquedesserts {
+  width: 100%;
   -webkit-animation: opaquedesserts 1000ms linear 1;
           animation: opaquedesserts 1000ms linear 1;
   -webkit-animation-fill-mode: backwards;
