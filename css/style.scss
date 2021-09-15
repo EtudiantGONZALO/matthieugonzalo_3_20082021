@@ -2,6 +2,7 @@ body
 {
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 /*Général*/@at-root
@@ -75,19 +76,16 @@ $backgroundfootertxt: white;
 
 .titremenu
 {
-    min-width: 320px;
-    max-width: 500px;
+    @extend .useful_width
     font-size: large;
     justify-self: flex-start;
     padding-top: 40px;
     padding-left: 30px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .useful_width
 {
-    min-width: 320px;
+    min-width: 250px;
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
@@ -222,6 +220,13 @@ $backgroundfootertxt: white;
     border-radius: 20px;
     box-shadow: 5px 5px 5px $backgroundsearch;
     margin-bottom: 30px;
+    position: relative;
+    text-decoration: none;
+}
+
+.colorblack
+{
+    color: black;
 }
 
 .imageacc
@@ -230,6 +235,18 @@ $backgroundfootertxt: white;
     height: 140px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
+}
+
+.btnnouveau
+{
+    width: 80px;
+    height: 25px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #99E2D0;
+    color: #6B8E23;
+    @extend .flexcenter
 }
 
 .txtacc

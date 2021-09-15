@@ -12,7 +12,7 @@ body {
   align-items: center;
 }
 
-.flexcenter {
+.flexcenter, .btnnouveau {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,7 +67,7 @@ body {
 }
 
 .useful_width, .cardsfr, .imagefr, .btnmenu {
-  min-width: 320px;
+  min-width: 250px;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
@@ -179,6 +179,12 @@ body {
   border-radius: 20px;
   box-shadow: 5px 5px 5px #DCDCDC;
   margin-bottom: 30px;
+  position: relative;
+  text-decoration: none;
+}
+
+.colorblack {
+  color: black;
 }
 
 .imageacc {
@@ -187,6 +193,16 @@ body {
   border-radius: 20px 20px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.btnnouveau {
+  width: 80px;
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #99E2D0;
+  color: #6B8E23;
 }
 
 .txtacc {
