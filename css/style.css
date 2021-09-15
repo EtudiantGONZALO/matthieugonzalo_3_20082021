@@ -2,6 +2,7 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 /*Général*/
@@ -56,17 +57,13 @@ body {
 }
 
 .titremenu {
-  min-width: 320px;
-  max-width: 500px;
   font-size: large;
   justify-self: flex-start;
   padding-top: 40px;
   padding-left: 30px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-.useful_width, .cardsfr, .imagefr, .btnmenu {
+.useful_width, .cardsfr, .imagefr, .btnmenu, .titremenu {
   min-width: 250px;
   max-width: 500px;
   margin-left: auto;

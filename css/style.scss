@@ -76,7 +76,7 @@ $backgroundfootertxt: white;
 
 .titremenu
 {
-    @extend .useful_width
+    @extend .useful_width;
     font-size: large;
     justify-self: flex-start;
     padding-top: 40px;
