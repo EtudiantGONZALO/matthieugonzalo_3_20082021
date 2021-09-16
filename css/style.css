@@ -120,8 +120,12 @@ body {
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 20px;
   margin-bottom: 40px;
+  box-shadow: 3px 3px 3px silver;
   z-index: 1;
   position: relative;
+}
+.btnhead:hover {
+  box-shadow: 3px 3px 3px lightgrey;
 }
 .btnhead:hover::after {
   opacity: 1;
@@ -288,7 +292,7 @@ footer {
   }
 }
 .sizeprix {
-  width: 40px;
+  width: 50px;
   height: 70px;
   background-color: #99E2D0;
   border-radius: 0 20px 20px 0;
@@ -308,10 +312,15 @@ footer {
 }
 
 /*loader*/
+.loader_conteneur {
+  width: 100%;
+  height: 100%;
+}
+
 .loader {
+  position: fixed;
   width: 120px;
   height: 120px;
-  position: absolute;
   top: 50%;
   left: 50%;
   margin-top: -60px;
