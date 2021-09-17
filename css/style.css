@@ -211,17 +211,36 @@ body {
 }
 
 /*footer*/
-footer {
+.footercolor {
   background-color: #000000;
 }
 
 .logofooter {
-  height: 20px;
+  height: 15px;
   filter: invert(100%);
+  margin-top: 35px;
+  margin-bottom: 20px;
 }
 
 .txt_footer {
   color: white;
+}
+
+.marginfooter30 {
+  margin-left: 30px;
+}
+
+.marginfooter20 {
+  margin-left: 20px;
+}
+
+.marginfooter10 {
+  margin-bottom: 10px;
+}
+
+.paddingcontact {
+  padding-top: 10px;
+  padding-bottom: 40px;
 }
 
 /*header menu*/
@@ -483,7 +502,7 @@ footer {
   0% {
     opacity: 0%;
   }
-  32% {
+  23% {
     opacity: 0%;
   }
   33% {
@@ -498,7 +517,7 @@ footer {
   0% {
     opacity: 0%;
   }
-  32% {
+  23% {
     opacity: 0%;
   }
   33% {
@@ -520,7 +539,7 @@ footer {
   0% {
     opacity: 0%;
   }
-  65% {
+  56% {
     opacity: 0%;
   }
   66% {
@@ -535,7 +554,7 @@ footer {
   0% {
     opacity: 0%;
   }
-  65% {
+  56% {
     opacity: 0%;
   }
   66% {
@@ -557,7 +576,7 @@ footer {
   0% {
     opacity: 0%;
   }
-  99% {
+  90% {
     opacity: 0%;
   }
   100% {
@@ -569,7 +588,7 @@ footer {
   0% {
     opacity: 0%;
   }
-  99% {
+  90% {
     opacity: 0%;
   }
   100% {
