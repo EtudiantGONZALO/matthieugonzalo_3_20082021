@@ -93,6 +93,12 @@ $backgroundfootertxt: white;
 
 /*header accueil*/@at-root
 
+header > div > a
+{
+    text-decoration: none;
+    color: black;
+}
+
 .logo
 {
     height: 30px;
@@ -146,6 +152,7 @@ $backgroundfootertxt: white;
     align-items: center;
     width: 200px;
     height: 40px;
+    margin: auto;
     color: white;
     background: linear-gradient(#FF79DA, #9356DC);
     border-radius: 20px;
@@ -248,7 +255,12 @@ $backgroundfootertxt: white;
     right: 10px;
     background-color: #99E2D0;
     color: #6B8E23;
-    @extend .flexcenter
+    @extend .flexcenter;
+}
+
+.media900px
+{
+    @extend .flexcolumn;
 }
 
 .txtacc
@@ -392,7 +404,9 @@ $backgroundfootertxt: white;
 
 .btnfin
 {
-    margin-top: 50px;
+    @extend .useful_width;
+    background-color: $backgroundprimary;
+    height: 100px;
 }
 
 /*loader*/@at-root
@@ -589,5 +603,50 @@ $backgroundfootertxt: white;
     {
         opacity: 100%;
     }
+}
 
+/*media querie*/
+
+@media screen and (min-width: 900px)
+{
+    .useful_width
+    {
+        min-width: 900px;
+        max-width: 1024px;
+    }
+
+    .btnnav
+    {
+        width: 30%;
+    }
+
+    .media900px
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .cardsize
+    {
+        margin: 3% 10%;
+    }
+
+    .titremenu
+    {
+        min-width: 120px;
+        max-width: 250px;
+        margin-left: none;
+        margin-right: none;
+    }
+
+    .menufr
+    {
+        width: 90%;
+    }
+
+    .opaqueentree, .opaqueplats, .opaquedesserts
+    {
+        width: 30%;
+    }
 }

@@ -6,7 +6,7 @@ body {
 }
 
 /*Général*/
-.flexcolumn {
+.flexcolumn, .media900px {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,7 +63,7 @@ body {
   padding-left: 30px;
 }
 
-.useful_width, .cardsfr, .imagefr, .btnmenu, .titremenu {
+.useful_width, .btnfin, .cardsfr, .imagefr, .btnmenu, .titremenu {
   min-width: 250px;
   max-width: 500px;
   margin-left: auto;
@@ -71,6 +71,11 @@ body {
 }
 
 /*header accueil*/
+header > div > a {
+  text-decoration: none;
+  color: black;
+}
+
 .logo {
   height: 30px;
   padding: 10px;
@@ -116,6 +121,7 @@ body {
   align-items: center;
   width: 200px;
   height: 40px;
+  margin: auto;
   color: white;
   background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 20px;
@@ -327,7 +333,8 @@ body {
 }
 
 .btnfin {
-  margin-top: 50px;
+  background-color: #F2F2F2;
+  height: 100px;
 }
 
 /*loader*/
@@ -593,5 +600,41 @@ body {
   }
   100% {
     opacity: 100%;
+  }
+}
+/*media querie*/
+@media screen and (min-width: 900px) {
+  .useful_width, .btnmenu, .titremenu, .imagefr, .cardsfr, .btnfin {
+    min-width: 900px;
+    max-width: 1024px;
+  }
+
+  .btnnav {
+    width: 30%;
+  }
+
+  .media900px {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .cardsize {
+    margin: 3% 10%;
+  }
+
+  .titremenu {
+    min-width: 120px;
+    max-width: 250px;
+    margin-left: none;
+    margin-right: none;
+  }
+
+  .menufr {
+    width: 90%;
+  }
+
+  .opaqueentree, .opaqueplats, .opaquedesserts {
+    width: 30%;
   }
 }/*# sourceMappingURL=style.css.map */
