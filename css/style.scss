@@ -314,8 +314,7 @@ header > div > a
 .position
 {
     position: relative;
-    right: 50px;
-    top: 5px;
+    right: 35px;
 }
 
 .imagefr
@@ -350,6 +349,14 @@ header > div > a
 {
     background-color: $backgroundprimary;
     @extend .useful_width
+}
+
+.menuunderline
+{
+    width: 40px;
+    border-top: 3px solid #99E2D0;
+    position: relative;
+    right: 90px;
 }
 
 .menufr
@@ -648,5 +655,17 @@ header > div > a
     .opaqueentree, .opaqueplats, .opaquedesserts
     {
         width: 30%;
+    }
+
+    .position
+    {
+        position: relative;
+        right: 300px;
+    }
+
+    .menuunderline
+    {
+        position: relative;
+        right: 25px;
     }
 }
