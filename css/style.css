@@ -2,7 +2,11 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100%;
+  font-family: Roboto, sans-serif;
+}
+
+.logo, h1, p {
+  font-family: Shrikhand, sans-serif;
 }
 
 /*Général*/
@@ -108,7 +112,17 @@ header > div > a {
   text-align: center;
 }
 
+.fontsizetitre {
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.margintitre {
+  margin-bottom: 30px;
+}
+
 .icone_acc {
+  margin: 0 10%;
   transition: all 400ms;
 }
 .icone_acc:hover {
@@ -174,7 +188,8 @@ header > div > a {
 }
 
 .btnmargin {
-  margin-right: 60px;
+  margin-right: 10%;
+  font-weight: bold;
 }
 
 /*cards accueil*/
@@ -183,6 +198,7 @@ header > div > a {
 }
 
 .cardsize {
+  width: 80%;
   border-radius: 20px;
   box-shadow: 5px 5px 5px #DCDCDC;
   margin-bottom: 30px;
@@ -195,7 +211,7 @@ header > div > a {
 }
 
 .imageacc {
-  width: 300px;
+  width: 100%;
   height: 140px;
   border-radius: 20px 20px 0 0;
   -o-object-fit: cover;
@@ -205,11 +221,14 @@ header > div > a {
 .btnnouveau {
   width: 80px;
   height: 25px;
+  font-size: 13px;
+  font-weight: bold;
   position: absolute;
   top: 10px;
   right: 10px;
   background-color: #99E2D0;
   color: #6B8E23;
+  border-radius: 2px;
 }
 
 .txtacc {
@@ -258,6 +277,8 @@ header > div > a {
 .imagefr {
   height: 250px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .icone_heart {
@@ -285,6 +306,7 @@ header > div > a {
   border-top: 3px solid #99E2D0;
   position: relative;
   right: 90px;
+  top: -10px;
 }
 
 .menufr {
@@ -616,17 +638,20 @@ header > div > a {
   }
 
   .btnnav {
-    width: 30%;
+    width: 40%;
   }
 
   .media900px {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
   }
 
   .cardsize {
-    margin: 3% 10%;
+    width: 40%;
+    margin: 3% 5%;
   }
 
   .titremenu {
@@ -652,5 +677,6 @@ header > div > a {
   .menuunderline {
     position: relative;
     right: 25px;
+    top: -10px;
   }
 }/*# sourceMappingURL=style.css.map */

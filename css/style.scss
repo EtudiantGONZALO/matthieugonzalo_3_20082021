@@ -2,7 +2,12 @@ body
 {
     margin: 0;
     padding: 0;
-    width: 100%;
+    font-family: Roboto, sans-serif;
+}
+
+.logo, h1, p
+{
+    font-family: Shrikhand, sans-serif;
 }
 
 /*Général*/@at-root
@@ -136,8 +141,20 @@ header > div > a
     text-align: center;
 }
 
+.fontsizetitre
+{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.margintitre
+{
+    margin-bottom: 30px;
+}
+
 .icone_acc
 {
+    margin: 0 10%;
     transition: all 400ms;
         &:hover
         {
@@ -214,7 +231,8 @@ header > div > a
 
 .btnmargin
 {
-    margin-right: 60px;
+    margin-right: 10%;
+    font-weight: bold;
 }
 
 /*cards accueil*/@at-root
@@ -226,6 +244,7 @@ header > div > a
 
 .cardsize
 {
+    width: 80%;
     border-radius: 20px;
     box-shadow: 5px 5px 5px $backgroundsearch;
     margin-bottom: 30px;
@@ -240,7 +259,7 @@ header > div > a
 
 .imageacc
 {
-    width: 300px;
+    width: 100%;
     height: 140px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
@@ -250,11 +269,14 @@ header > div > a
 {
     width: 80px;
     height: 25px;
+    font-size: 13px;
+    font-weight: bold;
     position: absolute;
     top: 10px;
     right: 10px;
     background-color: #99E2D0;
     color: #6B8E23;
+    border-radius: 2px;
     @extend .flexcenter;
 }
 
@@ -322,6 +344,7 @@ header > div > a
     height: 250px;
     @extend .useful_width;
     width: 100%;
+    object-fit: cover;
 }
 
 .icone_heart
@@ -357,6 +380,7 @@ header > div > a
     border-top: 3px solid #99E2D0;
     position: relative;
     right: 90px;
+    top: -10px;
 }
 
 .menufr
@@ -624,7 +648,7 @@ header > div > a
 
     .btnnav
     {
-        width: 30%;
+        width: 40%;
     }
 
     .media900px
@@ -632,11 +656,14 @@ header > div > a
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
     }
 
     .cardsize
     {
-        margin: 3% 10%;
+        width: 40%;
+        margin: 3% 5%;
     }
 
     .titremenu
@@ -667,5 +694,6 @@ header > div > a
     {
         position: relative;
         right: 25px;
+        top: -10px;
     }
 }
