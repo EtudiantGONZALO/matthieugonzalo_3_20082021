@@ -1,3 +1,5 @@
+$color_main: green;
+
 body
 {
     margin: 0;
@@ -139,6 +141,73 @@ header > div > a
 .textalign
 {
     text-align: center;
+}
+
+.margin
+{
+    margin-right: 20px;
+}
+
+.menutest {
+    position:relative;
+
+    .textform
+    {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .bloctest 
+    {
+        position:absolute,;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        height:100%;
+        right: -40px;
+        transition: right 0.3s ease-in-out;
+
+        .prixtest
+        {
+            margin-right: 10px;
+        }
+
+        .iconetest 
+        {
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            background-color:green;
+            height:100%;
+            width: 40px;
+            margin: auto;
+            border-radius: 0 20px 20px 0;
+            opacity: 0; 
+
+            .iconebox
+            {
+                transition: transform 1s ease-in-out;
+            }
+        }
+    }
+    &:hover 
+    {
+        .bloctest 
+        {
+            right: 0px;
+        }
+
+        .iconetest
+        {
+            opacity: 1;
+
+            .iconebox
+            {
+                transform: rotate(720deg);
+            }
+        }
+    }
 }
 
 .fontsizetitre
@@ -391,16 +460,40 @@ header > div > a
     border-radius: 20px;
     box-shadow: 5px 5px 5px $backgroundsearch;
     margin: 15px 0;
-}
 
-.menufr:hover .displaynone
-{
-    display: flex;
-}
+    .txtform
+    {
+        font-size: 15px;
+        padding-left: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
 
-.iconecheck
-{
-    animation: iconecheck 1000ms ease-in-out 1;
+    .flexcenter
+    {
+        .sizeprix
+        {
+            width: 50px;
+            height: 70px;
+            background-color: #99E2D0;
+            border-radius: 0 20px 20px 0;
+            color: white;
+
+            .iconecheck
+            {
+                animation: iconecheck 1000ms ease-in-out 1;
+            }
+        }
+    }
+
+    &:hover
+    {
+        .displaynone
+        {
+            display: flex;
+        }
+    }
 }
 
 @keyframes iconecheck
@@ -414,24 +507,6 @@ header > div > a
             transform: translateX(0px) rotate(720deg);
         }
     }
-
-.sizeprix
-{
-    width: 50px;
-    height: 70px;
-    background-color: #99E2D0;
-    border-radius: 0 20px 20px 0;
-    color: white;
-}
-
-.txtform
-{
-    font-size: 15px;
-    padding-left: 10px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
 
 .btnfin
 {

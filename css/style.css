@@ -112,6 +112,54 @@ header > div > a {
   text-align: center;
 }
 
+.margin {
+  margin-right: 20px;
+}
+
+.menutest {
+  position: relative;
+}
+.menutest .textform {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menutest .bloctest {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  right: -40px;
+  transition: right 0.3s ease-in-out;
+}
+.menutest .bloctest .prixtest {
+  margin-right: 10px;
+}
+.menutest .bloctest .iconetest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  height: 100%;
+  width: 40px;
+  margin: auto;
+  border-radius: 0 20px 20px 0;
+  opacity: 0;
+}
+.menutest .bloctest .iconetest .iconebox {
+  transition: transform 1s ease-in-out;
+}
+.menutest:hover .bloctest {
+  right: 0px;
+}
+.menutest:hover .iconetest {
+  opacity: 1;
+}
+.menutest:hover .iconetest .iconebox {
+  transform: rotate(720deg);
+}
+
 .fontsizetitre {
   font-weight: bold;
   font-size: x-large;
@@ -317,14 +365,26 @@ header > div > a {
   box-shadow: 5px 5px 5px #DCDCDC;
   margin: 15px 0;
 }
-
-.menufr:hover .displaynone {
-  display: flex;
+.menufr .txtform {
+  font-size: 15px;
+  padding-left: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
-
-.iconecheck {
+.menufr .flexcenter .sizeprix, .menufr .btnnouveau .sizeprix {
+  width: 50px;
+  height: 70px;
+  background-color: #99E2D0;
+  border-radius: 0 20px 20px 0;
+  color: white;
+}
+.menufr .flexcenter .sizeprix .iconecheck, .menufr .btnnouveau .sizeprix .iconecheck {
   -webkit-animation: iconecheck 1000ms ease-in-out 1;
           animation: iconecheck 1000ms ease-in-out 1;
+}
+.menufr:hover .displaynone {
+  display: flex;
 }
 
 @-webkit-keyframes iconecheck {
@@ -344,22 +404,6 @@ header > div > a {
     transform: translateX(0px) rotate(720deg);
   }
 }
-.sizeprix {
-  width: 50px;
-  height: 70px;
-  background-color: #99E2D0;
-  border-radius: 0 20px 20px 0;
-  color: white;
-}
-
-.txtform {
-  font-size: 15px;
-  padding-left: 10px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
 .btnfin {
   background-color: #F2F2F2;
   height: 100px;
