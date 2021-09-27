@@ -112,54 +112,6 @@ header > div > a {
   text-align: center;
 }
 
-.margin {
-  margin-right: 20px;
-}
-
-.menutest {
-  position: relative;
-}
-.menutest .textform {
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.menutest .bloctest {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  right: -40px;
-  transition: right 0.3s ease-in-out;
-}
-.menutest .bloctest .prixtest {
-  margin-right: 10px;
-}
-.menutest .bloctest .iconetest {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: green;
-  height: 100%;
-  width: 40px;
-  margin: auto;
-  border-radius: 0 20px 20px 0;
-  opacity: 0;
-}
-.menutest .bloctest .iconetest .iconebox {
-  transition: transform 1s ease-in-out;
-}
-.menutest:hover .bloctest {
-  right: 0px;
-}
-.menutest:hover .iconetest {
-  opacity: 1;
-}
-.menutest:hover .iconetest .iconebox {
-  transform: rotate(720deg);
-}
-
 .fontsizetitre {
   font-weight: bold;
   font-size: x-large;
@@ -372,6 +324,9 @@ header > div > a {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+.menufr .flexcenter .margin, .menufr .btnnouveau .margin {
+  margin-right: 20px;
+}
 .menufr .flexcenter .sizeprix, .menufr .btnnouveau .sizeprix {
   width: 50px;
   height: 70px;
@@ -380,8 +335,8 @@ header > div > a {
   color: white;
 }
 .menufr .flexcenter .sizeprix .iconecheck, .menufr .btnnouveau .sizeprix .iconecheck {
-  -webkit-animation: iconecheck 1000ms ease-in-out 1;
-          animation: iconecheck 1000ms ease-in-out 1;
+  -webkit-animation: iconecheck 500ms ease-in-out 1;
+          animation: iconecheck 500ms ease-in-out 1;
 }
 .menufr:hover .displaynone {
   display: flex;
@@ -392,7 +347,7 @@ header > div > a {
     transform: translateX(15px) rotate(0deg);
   }
   100% {
-    transform: translateX(0px) rotate(720deg);
+    transform: translateX(0px) rotate(360deg);
   }
 }
 
@@ -401,9 +356,53 @@ header > div > a {
     transform: translateX(15px) rotate(0deg);
   }
   100% {
-    transform: translateX(0px) rotate(720deg);
+    transform: translateX(0px) rotate(360deg);
   }
 }
+.menutest {
+  position: relative;
+}
+.menutest .textform {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menutest .bloctest {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  right: -40px;
+  transition: right 0.3s ease-in-out;
+}
+.menutest .bloctest .prixtest {
+  margin-right: 10px;
+}
+.menutest .bloctest .iconetest {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  height: 100%;
+  width: 40px;
+  margin: auto;
+  border-radius: 0 20px 20px 0;
+  opacity: 0;
+}
+.menutest .bloctest .iconetest .iconebox {
+  transition: transform 1s ease-in-out;
+}
+.menutest:hover .bloctest {
+  right: 0px;
+}
+.menutest:hover .iconetest {
+  opacity: 1;
+}
+.menutest:hover .iconetest .iconebox {
+  transform: rotate(720deg);
+}
+
 .btnfin {
   background-color: #F2F2F2;
   height: 100px;

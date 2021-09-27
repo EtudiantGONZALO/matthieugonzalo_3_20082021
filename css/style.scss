@@ -143,73 +143,6 @@ header > div > a
     text-align: center;
 }
 
-.margin
-{
-    margin-right: 20px;
-}
-
-.menutest {
-    position:relative;
-
-    .textform
-    {
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-    }
-
-    .bloctest 
-    {
-        position:absolute,;
-        display:flex;
-        align-items:center;
-        justify-content: center;
-        height:100%;
-        right: -40px;
-        transition: right 0.3s ease-in-out;
-
-        .prixtest
-        {
-            margin-right: 10px;
-        }
-
-        .iconetest 
-        {
-            display:flex;
-            align-items:center;
-            justify-content: center;
-            background-color:green;
-            height:100%;
-            width: 40px;
-            margin: auto;
-            border-radius: 0 20px 20px 0;
-            opacity: 0; 
-
-            .iconebox
-            {
-                transition: transform 1s ease-in-out;
-            }
-        }
-    }
-    &:hover 
-    {
-        .bloctest 
-        {
-            right: 0px;
-        }
-
-        .iconetest
-        {
-            opacity: 1;
-
-            .iconebox
-            {
-                transform: rotate(720deg);
-            }
-        }
-    }
-}
-
 .fontsizetitre
 {
     font-weight: bold;
@@ -472,6 +405,11 @@ header > div > a
 
     .flexcenter
     {
+        .margin
+        {
+            margin-right: 20px;
+        }
+
         .sizeprix
         {
             width: 50px;
@@ -482,7 +420,7 @@ header > div > a
 
             .iconecheck
             {
-                animation: iconecheck 1000ms ease-in-out 1;
+                animation: iconecheck 500ms ease-in-out 1;
             }
         }
     }
@@ -504,9 +442,71 @@ header > div > a
         }
         100%
         {
-            transform: translateX(0px) rotate(720deg);
+            transform: translateX(0px) rotate(360deg);
         }
     }
+
+.menutest {
+    position:relative;
+    
+    .textform
+    {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    
+    .bloctest 
+    {
+        position:absolute,;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        height:100%;
+        right: -40px;
+        transition: right 0.3s ease-in-out;
+    
+        .prixtest
+        {
+            margin-right: 10px;
+        }
+    
+        .iconetest 
+        {
+            display:flex;
+            align-items:center;
+            justify-content: center;
+            background-color:green;
+            height:100%;
+            width: 40px;
+            margin: auto;
+            border-radius: 0 20px 20px 0;
+            opacity: 0; 
+    
+            .iconebox
+            {
+                transition: transform 1s ease-in-out;
+            }
+        }
+    }
+    &:hover 
+    {
+        .bloctest 
+        {
+            right: 0px;
+        }
+    
+        .iconetest
+        {
+            opacity: 1;
+    
+            .iconebox
+            {
+                transform: rotate(720deg);
+            }
+        }
+    }
+}
 
 .btnfin
 {
