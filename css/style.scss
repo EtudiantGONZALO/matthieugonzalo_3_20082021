@@ -446,11 +446,20 @@ header > div > a
         }
     }
 
-.menutest {
-    position:relative;
+.menutest 
+{
+    position: relative;
+    height: 70px;
+    width: 90%;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px $backgroundsearch;
+    margin: 15px 0;
     
     .textform
     {
+        font-size: 15px;
+        padding-left: 10px;
         overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -458,11 +467,11 @@ header > div > a
     
     .bloctest 
     {
-        position:absolute,;
-        display:flex;
-        align-items:center;
+        position: absolute;
+        display: flex;
+        align-items: center;
         justify-content: center;
-        height:100%;
+        height: 100%;
         right: -40px;
         transition: right 0.3s ease-in-out;
     
@@ -477,11 +486,11 @@ header > div > a
             align-items:center;
             justify-content: center;
             background-color:green;
-            height:100%;
+            height: 100%;
             width: 40px;
             margin: auto;
             border-radius: 0 20px 20px 0;
-            opacity: 0; 
+            opacity: 0;
     
             .iconebox
             {
@@ -494,15 +503,15 @@ header > div > a
         .bloctest 
         {
             right: 0px;
-        }
-    
-        .iconetest
-        {
-            opacity: 1;
-    
-            .iconebox
+            
+            .iconetest
             {
-                transform: rotate(720deg);
+                opacity: 1;
+
+                .iconebox
+                {
+                    transform: rotate(720deg);
+                }
             }
         }
     }

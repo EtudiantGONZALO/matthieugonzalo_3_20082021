@@ -361,8 +361,16 @@ header > div > a {
 }
 .menutest {
   position: relative;
+  height: 70px;
+  width: 90%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #DCDCDC;
+  margin: 15px 0;
 }
 .menutest .textform {
+  font-size: 15px;
+  padding-left: 10px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -396,10 +404,10 @@ header > div > a {
 .menutest:hover .bloctest {
   right: 0px;
 }
-.menutest:hover .iconetest {
+.menutest:hover .bloctest .iconetest {
   opacity: 1;
 }
-.menutest:hover .iconetest .iconebox {
+.menutest:hover .bloctest .iconetest .iconebox {
   transform: rotate(720deg);
 }
 
