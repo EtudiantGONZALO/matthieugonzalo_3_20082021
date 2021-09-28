@@ -46,8 +46,9 @@ body
 .justifystart
 {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
+    align-items: baseline;
 }
 
 .displaynone
@@ -223,8 +224,8 @@ header > div > a
 
 .btnnav
 {
-    height: 50px;
-    width: 70%;
+    height: 70px;
+    width: 90%;
     border-radius: 20px;
     margin-bottom: 30px;
     background-color: $backgroundprimary;
@@ -235,6 +236,12 @@ header > div > a
 {
     margin-right: 10%;
     font-weight: bold;
+    color: black;
+}
+
+.deconone
+{
+    text-decoration: none;
 }
 
 /*cards accueil*/@at-root
@@ -460,7 +467,6 @@ header > div > a
     {
         font-size: 15px;
         padding-left: 10px;
-        overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
     }
@@ -510,7 +516,7 @@ header > div > a
 
                 .iconebox
                 {
-                    transform: rotate(720deg);
+                    transform: rotate(360deg);
                 }
             }
         }
