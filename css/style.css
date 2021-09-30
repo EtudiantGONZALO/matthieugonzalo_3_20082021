@@ -375,7 +375,6 @@ header > div > a {
 }
 .menutest {
   text-decoration: none;
-  position: relative;
   height: 70px;
   width: 90%;
   background-color: white;
@@ -391,41 +390,31 @@ header > div > a {
   text-overflow: ellipsis;
   color: black;
 }
-.menutest .bloctest {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  right: -40px;
-  transition: right 0.3s ease-in-out;
+.menutest .prixtest {
+  font-size: 15px;
 }
-.menutest .bloctest .prixtest {
-  margin-right: 10px;
-  color: black;
-}
-.menutest .bloctest .iconetest {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.menutest .iconetest {
   background-color: #99E2D0;
+  width: 0px;
   height: 100%;
-  width: 40px;
-  margin: auto;
-  border-radius: 0 20px 20px 0;
-  opacity: 0;
-}
-.menutest .bloctest .iconetest .iconebox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  transition: transform 1s ease-in-out;
+  border-radius: 0 25px 25px 0;
+  transition: all 0.3s ease-in-out;
 }
-.menutest:hover .bloctest {
-  right: 0px;
+.menutest .iconetest .iconebox {
+  margin-right: 20px;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
 }
-.menutest:hover .bloctest .iconetest {
-  opacity: 1;
+.menutest:hover .iconetest {
+  width: 50px;
+  border-radius: 0 20px 20px 0;
 }
-.menutest:hover .bloctest .iconetest .iconebox {
+.menutest:hover .iconetest .iconebox {
+  margin-right: 0px;
   transform: rotate(360deg);
 }
 
@@ -438,6 +427,10 @@ header > div > a {
 .loader_conteneur {
   width: 100%;
   height: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .loader {

@@ -473,7 +473,6 @@ header > div > a
 .menutest 
 {
     text-decoration: none;
-    position: relative;
     height: 70px;
     width: 90%;
     background-color: white;
@@ -490,59 +489,48 @@ header > div > a
         text-overflow: ellipsis;
         color: black;
     }
-    
-    .bloctest 
+
+    .prixtest
     {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        font-size: 15px;
+    }
+
+    .iconetest
+    {
+        background-color: $backgroundboiteverte;
+        width: 0px;
         height: 100%;
-        right: -40px;
-        transition: right 0.3s ease-in-out;
-    
-        .prixtest
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 0 25px 25px 0;
+        transition: all 0.3s ease-in-out;
+
+        .iconebox
         {
-            margin-right: 10px;
-            color: black;
+            margin-right: 20px;
+            transition: all 0.3s ease-in-out;
+            font-size: 18px;
         }
-    
-        .iconetest 
+    }
+
+    &:hover
+    {
+        .iconetest
         {
-            display:flex;
-            align-items:center;
-            justify-content: center;
-            background-color:$backgroundboiteverte;
-            height: 100%;
-            width: 40px;
-            margin: auto;
+            width: 50px;
             border-radius: 0 20px 20px 0;
-            opacity: 0;
-    
+
             .iconebox
             {
-                color: white;
-                transition: transform 1s ease-in-out;
+                margin-right: 0px;
+                transform: rotate(360deg);
             }
         }
     }
-    &:hover 
-    {
-        .bloctest 
-        {
-            right: 0px;
-            
-            .iconetest
-            {
-                opacity: 1;
-
-                .iconebox
-                {
-                    transform: rotate(360deg);
-                }
-            }
-        }
-    }
+    
+    
 }
 
 .btnfin
@@ -559,6 +547,11 @@ header > div > a
     width: 100%;
     height: 100%;
 }
+
+::-webkit-scrollbar
+    {
+        display: none;
+    }
 
 .loader
 {
