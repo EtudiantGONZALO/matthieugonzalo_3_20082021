@@ -46,13 +46,6 @@ body {
   display: none;
 }
 
-.titreacc {
-  font-size: x-large;
-  width: 100%;
-  justify-self: flex-start;
-  margin-left: 20px;
-}
-
 .useful_width, .btnfin, .cardsfr, .titremenu, .btnmenu, .imagefr {
   min-width: 250px;
   max-width: 768px;
@@ -185,6 +178,14 @@ header > div > a {
 }
 
 /*cards accueil*/
+.titreacc {
+  font-size: x-large;
+  font-weight: bold;
+  width: 100%;
+  justify-self: flex-start;
+  margin-left: 20px;
+}
+
 .restaurant {
   background-color: #F2F2F2;
 }
@@ -287,6 +288,7 @@ header > div > a {
 
 .titremenu {
   font-size: large;
+  font-weight: bold;
   justify-self: flex-start;
   padding-top: 40px;
   padding-left: 30px;
@@ -670,8 +672,8 @@ header > div > a {
   .titremenu {
     min-width: 120px;
     max-width: 250px;
-    margin-left: none;
-    margin-right: none;
+    margin-left: 0;
+    margin-right: 0;
   }
 
   .menufr {
