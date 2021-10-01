@@ -320,7 +320,7 @@ header > div > a {
   top: -10px;
 }
 
-.menufr {
+.menubox {
   text-decoration: none;
   height: 70px;
   width: 90%;
@@ -329,7 +329,7 @@ header > div > a {
   box-shadow: 5px 5px 5px #DCDCDC;
   margin: 15px 0;
 }
-.menufr .txtform {
+.menubox .textform {
   font-size: 15px;
   padding-left: 10px;
   overflow: hidden;
@@ -337,66 +337,15 @@ header > div > a {
   text-overflow: ellipsis;
   color: black;
 }
-.menufr .flexcenter .margin, .menufr .btnnouveau .margin {
+.menubox .flexcenter .prixform, .menubox .btnnouveau .prixform {
+  font-size: 15px;
   margin-right: 20px;
   color: black;
 }
-.menufr .flexcenter .sizeprix, .menufr .btnnouveau .sizeprix {
-  width: 50px;
-  height: 70px;
-  background-color: #99E2D0;
-  border-radius: 0 20px 20px 0;
-  color: white;
-}
-.menufr .flexcenter .sizeprix .iconecheck, .menufr .btnnouveau .sizeprix .iconecheck {
-  -webkit-animation: iconecheck 500ms ease-in-out 1;
-          animation: iconecheck 500ms ease-in-out 1;
-}
-.menufr:hover .displaynone {
-  display: flex;
-}
-
-@-webkit-keyframes iconecheck {
-  0% {
-    transform: translateX(15px) rotate(0deg);
-  }
-  100% {
-    transform: translateX(0px) rotate(360deg);
-  }
-}
-
-@keyframes iconecheck {
-  0% {
-    transform: translateX(15px) rotate(0deg);
-  }
-  100% {
-    transform: translateX(0px) rotate(360deg);
-  }
-}
-.menutest {
-  text-decoration: none;
-  height: 70px;
-  width: 90%;
-  background-color: white;
-  border-radius: 20px;
-  box-shadow: 5px 5px 5px #DCDCDC;
-  margin: 15px 0;
-}
-.menutest .textform {
-  font-size: 15px;
-  padding-left: 10px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  color: black;
-}
-.menutest .prixtest {
-  font-size: 15px;
-}
-.menutest .iconetest {
+.menubox .flexcenter .iconebox, .menubox .btnnouveau .iconebox {
   background-color: #99E2D0;
   width: 0px;
-  height: 100%;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -404,16 +353,17 @@ header > div > a {
   border-radius: 0 25px 25px 0;
   transition: all 0.3s ease-in-out;
 }
-.menutest .iconetest .iconebox {
+.menubox .flexcenter .iconebox .iconecheck, .menubox .btnnouveau .iconebox .iconecheck {
   margin-right: 20px;
   transition: all 0.3s ease-in-out;
   font-size: 18px;
 }
-.menutest:hover .iconetest {
-  width: 50px;
+.menubox:hover .iconebox {
+  width: 90px;
+  height: 70px;
   border-radius: 0 20px 20px 0;
 }
-.menutest:hover .iconetest .iconebox {
+.menubox:hover .iconebox .iconecheck {
   margin-right: 0px;
   transform: rotate(360deg);
 }
@@ -667,6 +617,7 @@ header > div > a {
           animation: opaquedesserts 1000ms linear 1;
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
+  margin-bottom: 30px;
 }
 
 @-webkit-keyframes opaquedesserts {

@@ -406,71 +406,7 @@ header > div > a
     top: -10px;
 }
 
-.menufr
-{
-    text-decoration: none;
-    height: 70px;
-    width: 90%;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px $backgroundsearch;
-    margin: 15px 0;
-
-    .txtform
-    {
-        font-size: 15px;
-        padding-left: 10px;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        color: black;
-    }
-
-    .flexcenter
-    {
-        .margin
-        {
-            margin-right: 20px;
-            color: black;
-        }
-
-        .sizeprix
-        {
-            width: 50px;
-            height: 70px;
-            background-color: $backgroundboiteverte;
-            border-radius: 0 20px 20px 0;
-            color: white;
-
-            .iconecheck
-            {
-                animation: iconecheck 500ms ease-in-out 1;
-            }
-        }
-    }
-
-    &:hover
-    {
-        .displaynone
-        {
-            display: flex;
-        }
-    }
-}
-
-@keyframes iconecheck
-    {
-        0%
-        {
-            transform: translateX(15px) rotate(0deg); 
-        }
-        100%
-        {
-            transform: translateX(0px) rotate(360deg);
-        }
-    }
-
-.menutest 
+.menubox 
 {
     text-decoration: none;
     height: 70px;
@@ -490,39 +426,45 @@ header > div > a
         color: black;
     }
 
-    .prixtest
+    .flexcenter
     {
-        font-size: 15px;
-    }
-
-    .iconetest
-    {
-        background-color: $backgroundboiteverte;
-        width: 0px;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        border-radius: 0 25px 25px 0;
-        transition: all 0.3s ease-in-out;
-
+        .prixform
+        {
+            font-size: 15px;
+            margin-right: 20px;
+            color: black;
+        }
+    
         .iconebox
         {
-            margin-right: 20px;
+            background-color: $backgroundboiteverte;
+            width: 0px;
+            height: 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            border-radius: 0 25px 25px 0;
             transition: all 0.3s ease-in-out;
-            font-size: 18px;
-        }
+    
+            .iconecheck
+            {
+                margin-right: 20px;
+                transition: all 0.3s ease-in-out;
+                font-size: 18px;
+            }
+        } 
     }
 
     &:hover
     {
-        .iconetest
+        .iconebox
         {
-            width: 50px;
+            width: 90px;
+            height: 70px;
             border-radius: 0 20px 20px 0;
 
-            .iconebox
+            .iconecheck
             {
                 margin-right: 0px;
                 transform: rotate(360deg);
@@ -723,6 +665,7 @@ header > div > a
     width: 100%;
     animation: opaquedesserts 1000ms linear 1;
     animation-fill-mode: backwards;
+    margin-bottom: 30px;
 }
 
 @keyframes opaquedesserts
