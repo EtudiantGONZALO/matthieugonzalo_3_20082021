@@ -101,6 +101,7 @@ header > div > a {
 }
 
 .icone_acc {
+  color: black;
   margin: 0 10%;
   transition: all 400ms;
 }
@@ -267,10 +268,6 @@ header > div > a {
   right: 35px;
 }
 
-.displaynoneimg {
-  display: none;
-}
-
 .imagefr {
   height: 250px;
   width: 100%;
@@ -295,6 +292,7 @@ header > div > a {
 }
 
 .icone_heart {
+  color: black;
   transition: all 400ms;
 }
 .icone_heart:hover {
@@ -672,8 +670,8 @@ header > div > a {
   .titremenu {
     min-width: 120px;
     max-width: 250px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: none;
+    margin-right: none;
   }
 
   .menufr {

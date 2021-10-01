@@ -136,6 +136,7 @@ header > div > a
 
 .icone_acc
 {
+    color: black;
     margin: 0 10%;
     transition: all 400ms;
         &:hover
@@ -338,11 +339,6 @@ header > div > a
     right: 35px;
 }
 
-.displaynoneimg
-{
-    display: none;
-}
-
 .imagefr
 {
     height: 250px;
@@ -373,6 +369,7 @@ header > div > a
 
 .icone_heart
 {
+    color: black;
     transition: all 400ms;
         &:hover
         {
