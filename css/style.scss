@@ -79,6 +79,7 @@ $backgroundfootertxt: white;
 }
 
 /*header accueil*/@at-root
+/* logo + moteur de recherche + titre + bouton "explorer nos restaurants" */
 
 header > div > a
 {
@@ -134,16 +135,7 @@ header > div > a
     margin-bottom: 30px;
 }
 
-.icone_acc
-{
-    color: black;
-    margin: 0 10%;
-    transition: all 400ms;
-        &:hover
-        {
-            color: $backgroundboutonfonce;
-        }
-}
+/* bouton de couleur */
 
 .btnhead
 {
@@ -188,6 +180,8 @@ header > div > a
 
 
 /*nav accueil*/@at-root
+/*barre de navigation :
+entre les différents restaurants, entre les les différents menu.*/
 
 .numero
 {
@@ -220,12 +214,26 @@ header > div > a
     color: black;
 }
 
+/*icone qui devient violet*/
+
+.icone_acc
+{
+    color: black;
+    margin: 0 10%;
+    transition: all 400ms;
+        &:hover
+        {
+            color: $backgroundboutonfonce;
+        }
+}
+
 .deconone
 {
     text-decoration: none;
 }
 
 /*cards accueil*/@at-root
+/*image du restaurant + nom du restaurant + emplacement*/
 
 .titreacc
 {
@@ -290,6 +298,28 @@ header > div > a
     margin: 0 20px;
 }
 
+/*icone coeur qui se remplit en rose*/
+
+.icone_heart
+{
+    color: black;
+    transition: all 400ms;
+        &:hover
+        {
+            color: $backgroundboutonclair;
+        }
+}
+
+.icone_heart:hover .displaynone
+{
+    display: block;
+}
+
+.icone_heart:hover .displayblock
+{
+    display: none
+}
+
 /*footer*/@at-root
 
 .footercolor
@@ -332,6 +362,7 @@ header > div > a
 }
 
 /*header menu*/@at-root
+/* fleche de retour page d'accueil + logo + image restaurant + nom du restaurant*/
 
 .position
 {
@@ -367,27 +398,8 @@ header > div > a
     padding-left: 30px;
 }
 
-.icone_heart
-{
-    color: black;
-    transition: all 400ms;
-        &:hover
-        {
-            color: $backgroundboutonclair;
-        }
-}
-
-.icone_heart:hover .displaynone
-{
-    display: block;
-}
-
-.icone_heart:hover .displayblock
-{
-    display: none
-}
-
 /*menu*/@at-root
+/* plats + condiments + prix*/
 
 .cardsfr
 {
@@ -403,6 +415,8 @@ header > div > a
     right: 90px;
     top: -10px;
 }
+
+/*animation boite verte du prix*/
 
 .menubox 
 {
@@ -480,7 +494,7 @@ header > div > a
     height: 100px;
 }
 
-/*loader*/@at-root
+/*loader spinner*/@at-root
 
 .loader_conteneur
 {
