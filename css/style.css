@@ -354,12 +354,12 @@ header > div > a {
   justify-content: center;
   align-items: center;
   color: white;
-  border-radius: 0 25px 25px 0;
-  transition: all 0.3s ease-in-out;
+  border-radius: 0 20px 20px 0;
+  transition: all 0.2s linear;
 }
 .menubox .flexcenter .iconebox .iconecheck, .menubox .btnnouveau .iconebox .iconecheck {
   margin-right: 20px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s linear;
   font-size: 18px;
 }
 .menubox:hover .iconebox {
