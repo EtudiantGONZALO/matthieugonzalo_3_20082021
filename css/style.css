@@ -674,8 +674,8 @@ header > div > a {
   .titremenu {
     min-width: 120px;
     max-width: 250px;
-    margin-left: none;
-    margin-right: none;
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .menufr {
